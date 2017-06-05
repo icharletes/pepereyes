@@ -1,0 +1,31 @@
+body{
+	background-color: #ffeaf7;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.container-pepe {
+	min-height: 200px;
+}
+
+.item-pepe {
+	width: 90%;
+	margin:0 auto;
+	@include breakpoint(small){
+		width: 50%;
+		& img{
+			margin: 0 auto;
+		}
+	}
+	@include breakpoint(large){
+		width: 42%;
+		margin-bottom: 1em;
+	}
+	// position: absolute;
+ //    left: 50%;
+ //    top: 50%;
+ //    transform: translate(-50%, -50%);
+ //    -webkit-transform: translate(-50%, -50%);
+}
