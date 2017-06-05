@@ -1,0 +1,156 @@
+.seminario{
+	@include breakpoint(small){
+		margin-top: 2em;
+	}
+	h2{
+		color: #000000;
+		font-size: 2.125em;
+		text-align: left;
+		margin-left: 5px;
+		position: relative;
+		font-weight: 700;
+		&:before{
+			content: "";
+			width: 3px;
+			height: 88%;
+			top: 1px;
+			left: -5px;
+			border-radius: 2px;
+			background-color: #009c31;
+			position: absolute;
+		}
+	}
+	p{
+		color:#434343;
+			@include breakpoint(small){
+				font-size: 0.9em;
+				margin-bottom: 20px;
+			}
+	}
+	h3{
+		@extend h2;
+		font-size: 1.9em;
+			@include breakpoint(small){
+				font-size: 1.6em;
+			}
+	}
+	.seminaristas{
+		text-align: center;
+		margin-top: 1.7em;
+		img{
+			width: 50%;
+			margin:0 auto;
+			padding:5px;
+			background-color: #009c31;
+		}
+		.rayito{
+			img{
+				background-color: transparent;
+			} 
+		}
+		.nombre{
+			font-weight: 700;
+			font-size: 1.4em;
+			margin-top: 0.5em;
+			color: #000000;
+			@include breakpoint(small){
+				margin-bottom: 8px;
+			}
+		}
+		.extracto{
+			color:#434343;
+			width: 225px;
+			margin: 0 auto;
+			@include breakpoint(small){
+				font-size: 0.8em;
+				width: 180px;
+			}
+		}
+		.yaop{
+			margin:3em 0; 
+			@include breakpoint(small){
+				display: none;
+			}
+			.btnInscribete{
+				background-color: #009c31;
+				padding:12px 20px;
+				color: #ffffff;
+				font-weight: 700;
+				font-size: 1.2em;
+				text-align: center;
+				margin: 0 auto;
+				border-radius:50px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.btnOculto{
+	display:none;
+	text-align: center;
+	@include breakpoint(small){
+		display: block;
+		padding:4em 0;
+		.btnOcultoIns{
+			background-color: #009c31;
+			padding:12px 35px;
+			color: #ffffff;
+			font-weight: 700;
+			font-size: 1.9em;
+			text-align: center;
+			margin: 0 auto;
+			border-radius:50px;
+			width: 100%;
+			cursor: none;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.formulario{
+	padding-bottom: 2em;
+	.form{
+		background-color: #ffffff;
+		border-radius:8px;
+		box-shadow: 0px 0px 20px 3px rgba(156,155,155,.5);
+		padding:12px;
+		@include breakpoint(small){
+			width: 70%;
+			margin: 0 auto;
+			padding: 32px;
+		}
+		p{
+			color:#434343;
+		}
+		input[type="text"],
+		input[type="email"]{
+			border:none;
+			border:1px solid #e0e0e0;
+			width: 100%;
+			padding:8px;
+			-webkit-appearance: none;
+			margin-bottom: 1em;
+		}
+		.send{
+			background-color: #009c31;
+			text-align: center;
+			width: 100%;
+			padding:12px;
+			border-radius:8px;
+			-webkit-appearance: none;
+			border:none;
+			color: #ffffff;
+			text-transform: uppercase;
+			font-size: 1.2em;
+			font-weight: 700;
+		}	
+	}
+}
+
+.center-image{
+	margin: 2em 0;
+}
+
