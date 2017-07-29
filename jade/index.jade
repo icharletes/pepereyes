@@ -1,58 +1,57 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+doctype html.no-js(lang='cl')
+head
+		meta(charset='utf-8')
 
-    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-    title Pepe Reyes 
-    <!--Bootstrap-->
-    link(href='css/style.css', rel='stylesheet')
-    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
-    link(href='css/animate.css', rel='stylesheet')
-    <!--[if IE 9]>
-    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
-    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-    <![endif]-->
-  body
-    .container
-        .row
-            .col-sm-12
-                .container-pepe
-                    .item-pepe.wow.bounceInUp
-                        img.img-responsive(src="img/pepe.svg", alt="")
-                footer
-                    h1.wow.bounceInUp(data-wow-delay='0.4s') hola, estoy construyendo este sitio a toda velocidad, <span>mientras tanto puedes conectarme a través del formulario o en mis redes sociales.</span>
-                    .form.form.wow.bounceInUp(data-wow-delay='0.5s')
-                        input(type="text", required)
-                        textarea
-                        input(type="submit", value="enviar")
-                    .socials.wow.bounceInUp(data-wow-delay='0.6s')
-                        ul
-                            li
-                                a(href="")
-                                    i.fa.fa-youtube-play
-                            li
-                                a(href="")
-                                    i.fa.fa-facebook-square
-                            li
-                                a(href="")
-                                    i.fa.fa-instagram
-                            li
-                                a(href="")
-                                    i.fa.fa-behance-square
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
 
+		title
 
+		meta(name='description', content='')
 
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+			
+		link(rel='apple-touch-icon', href='apple-touch-icon.png')
 
+		link(rel='stylesheet', href='css/styles.css')     
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')     
+	body
 
-                    
-
-         
-    //- jQuery (necessary for Bootstrap's JavaScript plugins)
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-    //- Include all compiled plugins (below), or include individual files as needed
-    script(src='js/bootstrap.min.js')
-    script(src='js/main.js')
-    script(src='js/wow.min.js')
+	header.header
+		.container-fluid
+				.row
+					.col-xs-12
+						.logo
+							a(href="/") 
+								img(src="img/logo.svg", alt="Pepe reyes")
+						.social
+							ul
+								li: a(href="#")
+										i.fa.fa-behance-square
+								li: a(href="#")
+										i.fa.fa-facebook-square
+	section.sectionfull.sectionIm
+		.container
+			.row
+				.col-md-6
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique, aliquam suscipit! Rem ducimus et voluptates nobis itaque doloribus asperiores aliquid eos dolores deserunt officiis, nisi, blanditiis, perferendis unde. Atque.
+				.col-md-6
+					.contenedor
+						p
+							| Quién 
+							span soy?
+	section.sectionfull.sectionDo
+		.container
+			.row
+				.col-md-6
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique, aliquam suscipit! Rem ducimus et voluptates nobis itaque doloribus asperiores aliquid eos dolores deserunt officiis, nisi, blanditiis, perferendis unde. Atque.
+				.col-md-6
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum sint aspernatur, quaerat pariatur velit labore natus magni accusamus animi itaque quo illo rem vel! Dolores cumque corporis distinctio cum.
+	section.sectionfull.sectionFind
+		.container
+			.row
+				.col-md-6
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique, aliquam suscipit! Rem ducimus et voluptates nobis itaque doloribus asperiores aliquid eos dolores deserunt officiis, nisi, blanditiis, perferendis unde. Atque.
+				.col-md-6
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum sint aspernatur, quaerat pariatur velit labore natus magni accusamus animi itaque quo illo rem vel! Dolores cumque corporis distinctio cum.
+	footer
+		p © Pepe Reyes 2017 

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -3551,7 +3550,8 @@ tbody.collapse.in {
       display: block;
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
-        text-decoration: none; }
+        text-decoration: none;
+        background-color: #eeeeee; }
     .nav > li.disabled > a {
       color: #777777; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
@@ -3934,17 +3934,21 @@ tbody.collapse.in {
   .navbar-default .navbar-brand {
     color: #777; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #5e5e5e; }
+      color: #5e5e5e;
+      background-color: transparent; }
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #ffffff; }
+    color: #777; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #ffffff; }
+      color: #333;
+      background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffffff; }
+    color: #555;
+    background-color: #e7e7e7; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
-    color: #ccc; }
+    color: #ccc;
+    background-color: transparent; }
   .navbar-default .navbar-toggle {
     border-color: #ddd; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -3961,11 +3965,14 @@ tbody.collapse.in {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #777; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333; }
+        color: #333;
+        background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #555; }
+      color: #555;
+      background-color: #e7e7e7; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-      color: #ccc; } }
+      color: #ccc;
+      background-color: transparent; } }
   .navbar-default .navbar-link {
     color: #777; }
     .navbar-default .navbar-link:hover {
@@ -5751,81 +5758,274 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* vietnamese */
 @font-face {
-  font-family: 'todayshop-boldregular';
-  src: url("../fonts/todayshop-bold-webfont.eot");
-  src: url("../fonts/todayshop-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/todayshop-bold-webfont.woff2") format("woff2"), url("../fonts/todayshop-bold-webfont.woff") format("woff"), url("../fonts/todayshop-bold-webfont.ttf") format("truetype"), url("../fonts/todayshop-bold-webfont.svg#todayshop-boldregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Maven Pro Regular"), local("MavenPro-Regular"), url(https://fonts.gstatic.com/s/mavenpro/v9/9aq-yTL3kcJXI9ucr03XRoX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
+/* latin-ext */
 @font-face {
-  font-family: 'todayshop-lightregular';
-  src: url("../fonts/todayshop-light-webfont.eot");
-  src: url("../fonts/todayshop-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/todayshop-light-webfont.woff2") format("woff2"), url("../fonts/todayshop-light-webfont.woff") format("woff"), url("../fonts/todayshop-light-webfont.ttf") format("truetype"), url("../fonts/todayshop-light-webfont.svg#todayshop-lightregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Maven Pro Regular"), local("MavenPro-Regular"), url(https://fonts.gstatic.com/s/mavenpro/v9/yylnvFPTXAd6yQPV1EKDlYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Maven Pro Regular"), local("MavenPro-Regular"), url(https://fonts.gstatic.com/s/mavenpro/v9/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* vietnamese */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Maven Pro Medium"), local("MavenPro-Medium"), url(https://fonts.gstatic.com/s/mavenpro/v9/SQVfzoJBbj9t3aVcmbspRvgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
+/* latin-ext */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Maven Pro Medium"), local("MavenPro-Medium"), url(https://fonts.gstatic.com/s/mavenpro/v9/SQVfzoJBbj9t3aVcmbspRojoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Maven Pro Medium"), local("MavenPro-Medium"), url(https://fonts.gstatic.com/s/mavenpro/v9/SQVfzoJBbj9t3aVcmbspRhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* vietnamese */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Maven Pro Bold"), local("MavenPro-Bold"), url(https://fonts.gstatic.com/s/mavenpro/v9/uDssvmXgp7Nj3i336k_dSvgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
+/* latin-ext */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Maven Pro Bold"), local("MavenPro-Bold"), url(https://fonts.gstatic.com/s/mavenpro/v9/uDssvmXgp7Nj3i336k_dSojoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Maven Pro Bold"), local("MavenPro-Bold"), url(https://fonts.gstatic.com/s/mavenpro/v9/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* vietnamese */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Maven Pro Black"), local("MavenPro-Black"), url(https://fonts.gstatic.com/s/mavenpro/v9/-91TwiFzqeL1F7Kh91APwfgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
+/* latin-ext */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Maven Pro Black"), local("MavenPro-Black"), url(https://fonts.gstatic.com/s/mavenpro/v9/-91TwiFzqeL1F7Kh91APwYjoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Maven Pro Black"), local("MavenPro-Black"), url(https://fonts.gstatic.com/s/mavenpro/v9/-91TwiFzqeL1F7Kh91APwRampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v11/Li18TEFObx_yGdzKDoI_cgsYbbCjybiHxArTLjt7FRU.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v11/CcKI4k9un7TZVWzRVT-T8wzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v11/WmVKXVcOuffP_qmCpFuyzQsYbbCjybiHxArTLjt7FRU.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v11/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v11/QoPu455RxV2raYSIFXAMBQsYbbCjybiHxArTLjt7FRU.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v11/1ImRNPx4870-D9a1EBUdPAzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background-color: #ffeaf7;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  height: 100%;
+  margin: 0; }
+
+body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.container-pepe {
-  min-height: 200px; }
+.header {
+  text-align: right;
+  background-color: #fff;
+  padding: 10px 20px;
+  position: relative; }
+  @media (min-width: 992px) {
+    .header {
+      text-align: center; } }
+  .header .social {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    display: none; }
+    @media (min-width: 992px) {
+      .header .social {
+        display: block; } }
+    .header .social ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .header .social ul li {
+        display: inline-block;
+        margin-right: 1em; }
+        .header .social ul li:last-child {
+          margin-right: 0; }
+        .header .social ul li a {
+          color: #000000;
+          font-size: 1.5em; }
 
-.item-pepe {
-  width: 90%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .item-pepe {
-      width: 50%; }
-      .item-pepe img {
-        margin: 0 auto; } }
-  @media (min-width: 1200px) {
-    .item-pepe {
-      width: 42%;
-      margin-bottom: 1em; } }
+footer {
+  background-color: #000000;
+  padding: 1em 0;
+  text-align: center;
+  color: white; }
 
-@media (min-width: 768px) {
-  footer {
+.sectionfull {
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.sectionIm {
+  text-align: center;
+  background-color: #FFEAF7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .sectionIm .contenedor {
+    margin: 10px auto;
     width: 60%;
-    margin: 0 auto; } }
-@media (min-width: 1200px) {
-  footer {
-    width: 43%; } }
-footer h1 {
-  font-family: 'todayshop-boldregular', san-serif;
-  color: #000000;
-  text-align: center;
-  font-size: 1.2em; }
-  footer h1 span {
-    font-family: 'todayshop-lightregular', san-serif; }
-footer .form input[type="text"],
-footer .form input[type="submit"],
-footer .form textarea {
-  width: 100%;
-  border: none;
-  margin-bottom: 0.5em;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 5px;
-  border-radius: 7px; }
-footer .form input[type="submit"] {
-  background-color: #e50055;
-  color: #ffffff;
-  font-size: 1.1em;
-  font-family: 'todayshop-boldregular', san-serif; }
-footer .socials {
-  width: 100%;
-  text-align: center;
-  margin-top: 2em; }
-  footer .socials ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    footer .socials ul li {
-      display: inline-block;
-      margin-right: 15px; }
-      footer .socials ul li a {
-        color: #000;
-        font-size: 1.8em; }
+    background-color: #E7F6F6;
+    border: 1px solid #99cccc; }
+    .sectionIm .contenedor p {
+      font-family: 'Maven Pro', serif;
+      font-size: 3em;
+      text-align: center;
+      color: #E50055;
+      font-weight: 500; }
+      .sectionIm .contenedor p span {
+        color: #1700E4;
+        font-weight: 900; }
+
+.sectionDo {
+  background-color: #FDC300; }
+
+.sectionFind {
+  background-color: #00AABC; }

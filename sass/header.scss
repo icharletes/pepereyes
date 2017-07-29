@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-size:16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.header{ 
+	text-align:right;
+	background-color: $white;
+	padding:10px 20px;
+	position: relative;
+	@include breakpoint(medium){
+		text-align: center;
+	}
+
+	.social{
+		position: absolute;
+		right: 0;
+		top:35%;
+		display: none;
+		@include breakpoint(medium){
+			display: block;
+		}
+		ul{
+			margin:0;
+			padding:0;
+			list-style: none;
+			li{
+				display: inline-block;
+				margin-right: 1em;
+				&:last-child{
+					margin-right: 0;
+				}
+				a{
+					color:$black;
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+
+}
