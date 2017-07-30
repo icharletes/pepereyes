@@ -1,0 +1,375 @@
+.pepemonias{
+	background-color: $fondo_monias;
+	padding: 4em 0px;
+	overflow: hidden;
+	font-family: 'claire_handbold';
+	.header-monias{
+		text-align: center;
+		position: relative;
+		@media only screen and (max-width: 600px) and (min-width: 500px) { 
+			width: 480px;
+			margin: 0 auto;
+		 }
+
+		@media only screen and (max-width: 767px) and (min-width: 601px) { 
+			width: 480px;
+			margin: 1.5em auto 0 auto;
+		 }
+
+		 @include breakpoint(small){
+		 	margin-top: 3em;
+		 }
+
+		.perrito-top{
+			position: absolute;
+			top: -30px;
+			left: 20px;
+			width: 25%;
+			@media only screen and (max-width: 600px) and (min-width: 415px) {  
+  				top:-40px;
+			}
+			@media only screen and (max-width: 767px) and (min-width: 601px) {
+				top:-45px;
+			}
+			@include breakpoint(small){
+				top:-65px;
+			}
+		}
+
+		.flaco-pepe{
+			position: absolute;
+			top: -47px;
+			width: 43%;
+			right: -30px;
+			@media only screen and (max-width: 600px) and (min-width: 415px) {  
+  				top:-60px;
+			}
+			@media only screen and (max-width: 767px) and (min-width: 601px) {
+				top:-66px;
+			}
+			@include breakpoint(small){
+				top:-97px;
+				right: -70px;
+			}
+		}
+
+	}
+
+	.librito{
+		margin-top: 2em;
+		text-align: center;
+
+		p{
+			color: white;
+			text-align: left;
+			font-size: 0.8em;
+		}
+		.perro-texto{
+			// display: -ms-flexbox;
+			// display: -webkit-flex;
+			// display: flex;
+			// -webkit-flex-direction: row;
+			// -ms-flex-direction: row;
+			// flex-direction: row;
+			// -webkit-flex-wrap: nowrap;
+			// -ms-flex-wrap: nowrap;
+			// flex-wrap: nowrap;
+			// -webkit-justify-content: flex-start;
+			// -ms-flex-pack: start;
+			// justify-content: flex-start;
+			// -webkit-align-content: center;
+			// -ms-flex-line-pack: center;
+			// align-content: center;
+			// -webkit-align-items: center;
+			// -ms-flex-align: center;
+			// align-items: center;
+			p{
+				width: 60%;
+				//margin-top: 40px;
+				margin: 0 auto;
+				@media only screen and (max-width: 767px) and (min-width: 601px) {
+					width: 343px;
+					margin-top: 100px;
+				}
+				@include breakpoint(small){
+					font-size: 1em;
+					margin-top: 140px;
+					width: 228px;
+				}
+			}
+			.mono-hola{
+				position: absolute;
+				right: 0;
+				width: 70px;
+				top:0;
+				@media only screen and (max-width: 767px) and (min-width: 601px) {
+					width: 110px;
+				}
+				@include breakpoint(small){
+					right: -11px;
+					width: 200px;
+				}
+			}
+			.carita-iz{
+				position: absolute;
+				left:0;
+				width: 70px;
+				top:0;
+				@media only screen and (max-width: 767px) and (min-width: 601px) {
+					width: 110px;
+				}
+				@include breakpoint(small){
+					left: -11px;
+					width: 230px;
+				}
+			}
+		}
+	}
+	.librito_manos_libro{
+		margin-top: 30px;
+		text-align: center;
+		@media only screen and (max-width: 600px) and (min-width: 400px) { 
+			width: 320px;
+			margin: 30px auto 30px auto;
+		}
+
+		@media only screen and (max-width: 767px) and (min-width: 601px) {
+			width: 410px;
+			margin: 3em auto 0 auto;
+		}
+		@include breakpoint(small){
+			width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+	.amigos{
+		margin-top: 25px;
+		@media only screen and (max-width: 600px) and (min-width: 415px) { 
+			width: 415px;
+			margin: 0 auto 1.5em auto;
+		}
+		@media only screen and (max-width: 767px) and (min-width: 601px) {
+			width: 460px;
+			margin: 40px auto 1.5em auto;
+
+		}
+		@include breakpoint(small){
+			width: 415px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+		}
+		.olea{
+			position: relative;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+			-webkit-justify-content: flex-start;
+			-ms-flex-pack: start;
+			justify-content: flex-start;
+			-webkit-align-content: flex-start;
+			-ms-flex-line-pack: start;
+			align-content: flex-start;
+			-webkit-align-items: flex-start;
+			-ms-flex-align: start;
+			align-items: flex-start;
+			.resena{
+				width: 70%;
+				color:white;
+				text-align: right;
+				font-size: 0.8em;
+			}
+			.cabeza{
+				width: 40%;
+				position: absolute;
+				top: 0;
+				right: -30px;
+				top: -20px;
+				@media only screen and (max-width: 600px) and (min-width: 415px) { 
+					width: 130px;
+					right: -10px;
+				}
+				@media only screen and (max-width: 767px) and (min-width: 601px) {
+					right: 0;
+					width: 138px;
+				}
+				@include breakpoint(small){
+					width: 30%;
+					right: 5px;
+					top:-60px;
+				}
+			}
+			.line_olea{
+				display: none;
+				position: absolute;
+				@include breakpoint(small){
+					display: block;
+					top: 70px;
+					width: 240px;
+					left: 85px;
+				}
+			}
+		}
+
+		.ale{
+			position: relative;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+			-webkit-justify-content: flex-end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+			-webkit-align-content: flex-end;
+			-ms-flex-line-pack: end;
+			align-content: flex-end;
+			-webkit-align-items: flex-end;
+			-ms-flex-align: end;
+			align-items: flex-end;
+			.resena{
+				width: 70%;
+				color:white;
+				text-align: left;
+				font-size: 0.8em;
+			}
+			.cabeza{
+				width: 40%;
+				position: absolute;
+				top: 0;
+				left: -30px;
+				top: -20px;
+				@media only screen and (max-width: 600px) and (min-width: 415px) { 
+					width: 130px;
+					left: -20px;
+				}
+				@media only screen and (max-width: 767px) and (min-width: 601px) {
+					width: 150px;
+					left:-20px;
+				}
+				@include breakpoint(small){
+					width: 145px;
+					left: -50px;
+					top: -75px;
+				}
+			}
+			.line_ale{
+				display: none;
+				position: absolute;
+				@include breakpoint(small){
+					display: block;
+					top: 50px;
+					width: 240px;
+					left: 85px;
+				}
+			}
+		}
+	}
+	h2{
+		text-align: center;
+		color: white;
+		font-size: 1.1em;
+		line-height: 1.3;
+		@media only screen and (max-width: 600px) and (min-width: 415px) {
+			width: 200px;
+			margin: 45px auto 0 auto;
+			display: block;
+		}
+		@media only screen and (max-width: 767px) and (min-width: 601px) {
+			width: 200px;
+			margin: 40px auto 0 auto;
+		}
+		@include breakpoint(small){
+			margin-top: 60px;
+			width: 270px;
+			margin: 2em auto;
+		}
+	}
+	.footer_monias{
+		text-align: center;
+		margin-top: 1em;
+		position: relative;
+
+
+		@media only screen and (max-width: 767px) and (min-width: 601px) {
+			width: 571px;
+			margin:0 auto;
+			top: -30px;
+			height: 300px;
+		}
+		@include breakpoint(small){
+			height: 230px;
+			width: 720px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.buy{
+			font-size: 1.5em;
+			padding: 5px 12px;
+			font-size: 1.5em;
+			text-align: center;
+			color: white;
+			border-radius: 50px;
+			border:2px solid white;
+			margin: 0 auto;
+			display: inline-block;
+			text-decoration: none;
+			letter-spacing: 5px;
+			left:-30px;
+			@media only screen and (max-width: 767px) and (min-width: 601px) {
+				padding: 5px 25px;
+				position: relative;
+				top:60px;
+				z-index: 99;
+			}
+			@include breakpoint(small){
+				z-index: 99;
+				position: relative;
+			}
+		}
+		.monias-chao,.globo{
+			display: none;
+			@include breakpoint(small){
+				display: block;
+			}
+		}
+		@media only screen and (max-width: 767px) and (min-width: 601px) {
+			.monias-chao,.globo{
+				display: block;
+			}
+			.monias-chao{
+				position: absolute;
+				right: 0;
+				width: 350px;
+				top: 0;
+			}
+
+		}
+		@include breakpoint(small){
+			.monias-chao{
+				position: absolute;
+				right: 50px;
+				width: 350px;
+				top: -80px;
+			}
+			.globo{
+				position: absolute;
+				left:170px;
+				width: 250px;
+				top: 80px;
+			}
+		}
+	}
+}

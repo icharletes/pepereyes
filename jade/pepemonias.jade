@@ -1,0 +1,124 @@
+doctype html
+html(lang='es-CL')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Pepe Reyes 
+    <!--Bootstrap-->
+    link(href='css/style.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='css/animate.css', rel='stylesheet')
+    <!--[if IE 9]>
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    <![endif]-->
+  body
+    nav.pushy.pushy-left(data-focus="#first-link")
+        .pushy-content
+            ul
+                li: a.pushy-link(href="index.html") Inicio
+                li: a.pushy-link(href="bio.html") Bio
+                li: a.pushy-link(href="#") Pepemonias
+                li: a.pushy-link(href="#") Blog
+                li.pushy-submenu
+                  button#first-link Que hago
+                  ul
+                    li.pushy-link
+                      a(href='#') Ilustración
+                    li.pushy-link
+                      a(href='#') Editorial
+                li: a.pushy-link(href="#") Contacto
+    .site-overlay
+    #container
+        button.menu-btn
+            i.fa.fa-bars
+        .container-fluid.helper_white
+            header.header
+                .row
+                    .col-xs-12
+                        a.pepe-logo(href="#")
+                            img(src="img/logo_pepe.svg", alt="")
+                        .sociales
+                            ul
+                                li: a.socials_link(href="#") 
+                                    i.fa.fa-facebook-square
+                                li: a.socials_link(href="#") 
+                                    i.fa.fa-behance-square
+        section.pepemonias
+            .container
+                .row
+                    .col-xs-12
+                        .header-monias
+                            .perrito-top
+                                img(src="img/perrin.svg", alt="")
+                            img(src="img/bg-monias-01.svg", alt="")
+                            .flaco-pepe
+                                img(src="img/monias.svg", alt="")
+                    .col-xs-12
+                        .librito
+                            //- .carita-iz
+                            //-     img(src="", alt="")
+                            .perro-texto
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer
+                                .mono-hola
+                                    img(src="img/hola-monias.svg", alt="")
+                                .carita-iz
+                                    img(src="img/cabeza-monias.svg", alt="")
+                    .col-xs-12
+                        .librito_manos_libro
+                            img(src="img/librito-solo.png", alt="")
+                    .col-xs-12
+                        .amigos
+                            .olea
+                                p.resena Es un muy bonito libro, una especie de acto de desnudez sin escándalo. Creo que es un ejercicio narrativo y  muy personal. Hay identificación y punto de vista. Mucha soltura, lo que fluye muy bien  en el “orden desordenado”  eso es atractivo, requiere descifrar las páginas de pepe.
+                                .cabeza
+                                    img(src="img/olea.svg", alt="")
+                                .line_olea
+                                    img(src="img/linea.svg", alt="")
+                    .col-xs-12
+                        .amigos
+                            .ale
+                                .cabeza
+                                    img(src="img/ale.svg", alt="")
+                                p.resena Como un ejercicio de memoria compartida, Pepe Reyes indaga en sus recuerdos de infancia, logrando un relato muy honesto y sin pretensiones en un libro que narra con detalles el a veces agridulce mundo cotidiano de un niño solitario.
+                                .line_ale
+                                    img(src="img/linea_2.svg", alt="")    
+                    .col-xs-12
+                        h2 te rediccionaré a dónde puedes adquirir mi libro.
+                        .footer_monias
+                            .globo
+                                img(src="img/globo-gracias.svg", alt="")
+                            a.buy(href="#") comprar
+                            .monias-chao
+                                img(src="img/monias-footer.svg", alt="")
+
+        footer
+            p Pepe Reyes 
+                time 2017 
+                span hecho con 
+                    i.fa.fa-heart.wow.pulse
+
+
+
+
+    
+
+
+
+
+
+
+
+                    
+
+         
+    //- jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
+    script(src='js/pushy.min.js')
+    script(src='js/wow.min.js')

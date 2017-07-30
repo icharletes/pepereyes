@@ -1,0 +1,121 @@
+doctype html
+html(lang='es-CL')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Pepe Reyes 
+    <!--Bootstrap-->
+    link(href='css/style.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='css/animate.css', rel='stylesheet')
+    <!--[if IE 9]>
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    <![endif]-->
+  body
+    nav.pushy.pushy-left(data-focus="#first-link")
+        .pushy-content
+            ul
+                li: a.pushy-link(href="index.html") Inicio
+                li: a.pushy-link(href="bio.html") Bio
+                li: a.pushy-link(href="pepemonias.html") Pepemonias
+                li: a.pushy-link(href="#") Blog
+                li.pushy-submenu
+                  button#first-link Que hago
+                  ul
+                    li.pushy-link
+                      a(href='#') Ilustración
+                    li.pushy-link
+                      a(href='#') Editorial
+                li: a.pushy-link(href="#") Contacto
+    .site-overlay
+    #container
+        button.menu-btn
+            i.fa.fa-bars
+        .container-fluid.helper_white
+            header.header
+                .row
+                    .col-xs-12
+                        a.pepe-logo(href="#")
+                            img(src="img/logo_pepe.svg", alt="")
+                        .sociales
+                            ul
+                                li: a.socials_link(href="#") 
+                                    i.fa.fa-facebook-square
+                                li: a.socials_link(href="#") 
+                                    i.fa.fa-behance-square
+        section.bio
+            .container
+              .flexboxOrder
+                  .col-xs-12.a.col-md-6
+                      #slides
+                          img(src="img/slider.gif", alt="")
+                          img(src="img/slider.gif", alt="")
+                          img(src="img/slider.gif", alt="")
+                  .col-xs-12.b.col-md-6
+                      h1
+                        | me llamo 
+                        strike(data-balloon="PEPE" data-balloon-pos="up") josé 
+                        span reyes
+                      p.yo-soy_reyes  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repudiandae, quasi recusandae modi vitae, nihil repellat quod suscipit, rerum, ullam aliquid corporis.
+                .col-xs-12
+                    .yo-soy
+                        h2 Bio
+                        div.yo-soy_p Hola soy <strike>José</strike> Reyes, me dicen pepe, me gusta crear imágenes y aprender cosas nuevas, he hecho ilustraciones y diseños para revistas, libros, sitios webs, proyectos independientes, teatro, particulares y empresas nacionales, vivo al sur de la capital en un pueblecito escondido. 
+                        div.yo-soy_p Egresé de la carrera de Diseño gráfico publicitario de la Universidad Santo Tomás, obtuve el grado académico de licenciado en Diseño y el título profesional de diseñador gráfico profesional.
+                        div.yo-soy_p <b>He hecho talleres con:</b>
+
+                        ul.lista-talleres
+                            li 2014 Taller autobiográfico por FranNerd en filsa
+                            li 2014 Taller de collage por Alejandra Acosta
+                            li 2014 Taller de ilustración por Sandra Conejeros
+                            li 2013 Taller ilustración colectivo ILUSTREN
+                            li 2013 Taller ilustración Jairo Buitrago en FILSA.
+                        div.yo-soy_p <b>He expuesto en:</b>
+
+                        ul.lista-talleres
+                            li 2014 exposición colectiva “red social” por plop galeria.
+                            li 2013 Exposición ilustración Colectivo ILUSTREN.
+                            li 2013 Exposición ilustración “portafolio en vivo” monociclo bar.
+                            li 2013 Exposición individual ilustración acción poética UST.
+                        div.yo-soy_p <b>Publicaciones</b>
+
+                        ul.lista-talleres
+                            li Pepemonias, en mi no infancia, fanzine, autopublicación 2014
+                            li Un pelo perdido, magazine junio 2013
+                            li Nomadarte, libro para colorear marzo 2013
+                            li Anormal magazine serie collage enero2012 
+                                a(href="http://cargocollective.com/pepereyes/filter/red/About-pepereyes") link
+                            li Seance magazine serie collage abril 2012 (sitio web) 
+                                a(href="http://cargocollective.com/pepereyes/filter/red/About-pepereyes") link
+
+        footer.navbar-fixed-bottom
+            p
+              | Pepe Reyes
+              time 2017
+              |  hecho con 
+              i.fa.fa-heart.wow.pulse
+
+
+    
+
+
+
+
+
+
+
+                    
+
+         
+    //- jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
+    script(src='js/pushy.min.js')
+    script(src='js/jquery.slides.min.js')
+    script(src='js/wow.min.js')

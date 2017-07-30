@@ -1,0 +1,62 @@
+.contacto{
+  background-color: $color_fondo;
+  height: 100%;
+  padding: 2em 0 4em 0;
+  @include breakpoint(small){
+    height: 100vh;
+  }
+  .monias-sentado{
+    text-align: center;
+    @include breakpoint(large){
+      text-align: right;
+    }
+  }
+  .form{
+    @include breakpoint(medium){
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include breakpoint(large){
+      width: 60%;
+      float: left;
+    }
+    h1{
+      width: 100%;
+      margin: 1em 0;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="textarea"]{
+      width: 100%;
+      border:1px solid $color_primario;
+      border-radius: 20px;
+      padding: 8px 8px;
+      color:black;
+      appearance: none;
+      margin-bottom: 1.2em;
+    }
+    input[type="textarea"]{
+      height: 100px;
+      //padding: 2px 8px;
+      line-height: normal;
+    }
+    .enviar{
+      background-color: $color_primario;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 50px;
+      width: 100%;
+      padding: 12px 14px;
+      appearance: none;
+      border: none;
+      font-size: 1.5em;
+      @include breakpoint(small){
+        width: 50%;
+        padding: 5px 0px;
+      }
+    }
+  }
+}

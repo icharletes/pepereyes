@@ -1,31 +1,94 @@
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body{
-	background-color: #ffeaf7;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	height: 100%;
+	font-family: 'Maven Pro', sans-serif;
 }
 
-
-.container-pepe {
-	min-height: 200px;
+.clearFix{
+  clear: both;
 }
 
-.item-pepe {
-	width: 90%;
-	margin:0 auto;
-	@include breakpoint(small){
-		width: 50%;
-		& img{
-			margin: 0 auto;
+.helper_white{
+	background-color: white;
+}
+
+.border-header{
+  border-bottom: 1px solid #D6D6D6;
+}
+
+#container{
+	position: relative;
+	.menu-btn{
+		font-size: 2em;
+		position: absolute;
+		top:16px;
+		left:0px;
+		z-index: 10;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		color: black;
+		background-color: transparent;
+		@include breakpoint(small){
+			// left: 32px;
 		}
 	}
-	@include breakpoint(large){
-		width: 42%;
-		margin-bottom: 1em;
+}
+
+.header{
+	background-color: white;
+	padding: 20px 5px;
+	position: relative;
+	z-index: 0;
+
+	.pepe-logo{
+		text-align: center;
+		display: block;
+		& img{
+			width: 130px;
+		}
+		@include breakpoint(small){
+			text-align: center;
+		}
 	}
-	// position: absolute;
- //    left: 50%;
- //    top: 50%;
- //    transform: translate(-50%, -50%);
- //    -webkit-transform: translate(-50%, -50%);
+
+	//sociales
+	.sociales{
+		display: none;
+		position: absolute;
+		@include breakpoint(small){
+			display: block;
+			right: 10px;
+			width: auto;
+			top: 8px;
+			ul{
+				margin: 0;
+				padding:0;
+				list-style: none;
+				li{
+					display: inline-block;
+					margin-right: 10px;
+					&:last-child{
+						margin-right: 0;
+					}
+					a{
+						display: block;
+						color:black;
+						font-size: 1.6em;
+					}
+				}
+			}
+		}
+	}
+
 }

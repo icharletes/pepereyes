@@ -1,0 +1,71 @@
+doctype html
+html(lang='es-CL')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Pepe Reyes 
+    <!--Bootstrap-->
+    link(href='css/style.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='css/animate.css', rel='stylesheet')
+    <!--[if IE 9]>
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    <![endif]-->
+  body
+    nav.pushy.pushy-left(data-focus="#first-link")
+        .pushy-content
+            ul
+                li: a.pushy-link(href="index.html") Inicio
+                li: a.pushy-link(href="bio.html") Bio
+                li: a.pushy-link(href="pepemonias.html") Pepemonias
+                li: a.pushy-link(href="#") Blog
+                li.pushy-submenu
+                  button#first-link Que hago
+                  ul
+                    li.pushy-link
+                      a(href='#') Ilustración
+                    li.pushy-link
+                      a(href='#') Editorial
+                li: a.pushy-link(href="#") Contacto
+    .site-overlay
+    #container
+        button.menu-btn
+            i.fa.fa-bars
+        .container-fluid.helper_white.border-header
+            header.header
+                .row
+                    .col-xs-12
+                        a.pepe-logo(href="#")
+                            img(src="img/logo_pepe.svg", alt="")
+                        .sociales
+                            ul
+                                li: a.socials_link(href="#") 
+                                    i.fa.fa-facebook-square
+                                li: a.socials_link(href="#") 
+                                    i.fa.fa-behance-square
+        section.contacto
+          .container
+            .row
+              .contacto
+                .col-xs-12.col-sm-6
+                  .monias-sentado
+                    img(src="img/monias-sentado.svg")
+                .col-xs-12.col-sm-6
+                  form.form
+                    h1 Háblame por aquí
+                    input(type="text", placeholder="nombre")
+                    input(type="email", placeholder="tu mail")
+                    input(type="textarea",rows="2",cols="20")
+                    button.enviar(type="submit") enviar
+                  .clearFix
+        .clearFix
+        footer
+            p
+              | Pepe Reyes
+              time 2017
+              |  hecho con 
+              i.fa.fa-heart.wow.pulse
